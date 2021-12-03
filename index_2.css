@@ -9,8 +9,6 @@ table {
 }
 td {
   border: 1px solid;
-  width: 10%;
-  height: 10%;
 }
 
 .selected {
