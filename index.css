@@ -1,9 +1,9 @@
 table {
   position: absolute;
-  top: calc((100vh - 100vmin) / 2);
-  left: calc((100vw - 100vmin) / 2);
-  width: calc(100vmin);
-  height: calc(100vmin);
+  top: calc((100vh - (100vmin * 2 / 3)) / 2);
+  left: calc((100vw - (100vmin * 2 / 3)) / 2);
+  width: calc(100vmin * 2 / 3);
+  height: calc(100vmin * 2 / 3);
   border: 1px solid;
   border-spacing: 0;
 }

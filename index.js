@@ -5,7 +5,7 @@ $(window).on("load", function () {
     loop();
   }
   function loop() {
-    const idx = Math.floor(Math.random() * 25);
+    const idx = Math.floor(Math.random() * 16);
     const target = $($("td")[idx]).addClass("selected");
     target.on("click", function () {
       touch(target);
