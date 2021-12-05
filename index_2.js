@@ -1,4 +1,17 @@
 $(window).on("load", function () {
+  // construct field
+  const fieldSize = 4;
+  const $body = $("body");
+  const $table = $("<table>");
+  $body.append($table);
+  [...Array(fieldSize)].forEach(() => $table.append("<tr>"));
+  const $trs = $("tr");
+  $trs.each((_, tr) =>
+    [...Array(fieldSize)].forEach(() => $(tr).append("<td>"))
+  );
+
+  $trs.forEach;
+
   const cells = $("td");
   console.log(`size: ${cells.length}`);
   let touched = 0;
