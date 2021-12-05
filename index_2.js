@@ -1,4 +1,6 @@
 $(window).on("load", function () {
+  const cells = $("td");
+  console.log(`size: ${cells.length}`);
   let touched = 0;
   function touch(self) {
     self.off("click");
@@ -10,7 +12,7 @@ $(window).on("load", function () {
   let prev = -1;
   function next() {
     while (true) {
-      const idx = Math.floor(Math.random() * 16);
+      const idx = Math.floor(Math.random() * cells.length);
       if (prev !== idx) {
         prev = idx;
         return idx;
@@ -19,8 +21,7 @@ $(window).on("load", function () {
   }
   function loop() {
     const idx = next();
-    console.log(idx);
-    const target = $($("td")[idx]).addClass("selected");
+    const target = $(cells[idx]).addClass("selected");
     target.on("click", function () {
       touch(target);
     });
