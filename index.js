@@ -10,8 +10,6 @@ $(window).on("load", function () {
     [...Array(fieldSize)].forEach(() => $(tr).append("<td>"))
   );
 
-  $trs.forEach;
-
   const cells = $("td");
   console.log(`size: ${cells.length}`);
   let touched = 0;
